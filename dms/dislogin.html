@@ -1,0 +1,122 @@
+<html><title>Registration Page</title>
+<style>input{font-size:12pt;color:blue;}	table{font-size:13pt;color:maroon;}td{font-align:center} </style>
+<script language="JavaScript">
+function passcheck()
+{
+	var pass=login.pass.value
+	var pass1=login.pass1.value
+	if(pass != pass1 )
+	{
+		alert("Passwords typed do not match. Please re-enter your password")
+		login.pass.focus()
+	}
+}
+function logincheck()
+{
+	if(login.login.value == login.pass.value)
+	{
+		alert("Login and Password are same . Please change your password")
+		login.pass.focus()
+	}
+}
+function isPosInteger(inputval)
+{
+	inputstr=inputval.toString()
+	for(var i=0;i<inputstr.length;i++)
+	{
+		var fchar=inputstr.charAt(i)
+		if(fchar<"0" || fchar > "9")
+			return true
+	}return false
+}
+function pincheck()
+{
+	if(isPosInteger(login.pin.value))
+	{
+		alert("please enter valid numbers for pincode")
+		login.pin.focus()
+		return true
+	}
+}
+function rphonecheck()
+{
+	if(isPosInteger(login.rphone.value))
+	{
+		alert("please enter valid number for phone")
+		login.rphone.focus()
+		return true
+	}
+}
+function ophonecheck()
+{
+	if(isPosInteger(login.ophone.value))
+	{
+		alert("please enter valid phone number"); 
+		login.ophone.focus()
+		return false
+	}
+	return true
+}
+function emailcheck()
+{
+	flag=0
+	inputstr=login.email.value
+	for(var i=0;i<inputstr.length;i++)
+	{
+		var fchar=inputstr.charAt(i)
+		if(fchar == "@")
+			 flag=1
+	}
+	if(flag == 0)
+	{
+		alert("please return valid E-Mail ID")
+		login.email.focus()
+	}
+}
+function verify()
+{
+	var form=document.forms[0]
+	for(i=0;i<form.elements.length;i++)
+	{
+		if(form.elements[i].type=="text" && form.elements[i].value == "")
+		{ alert("Please fill " + form.elements[i].name)
+			form.elements[i].name.focus()
+			return false
+		}
+	}
+	return true
+}
+function check()
+{
+	if(verify())
+		if(ophonecheck())
+		 return true
+}
+</script>
+<body><center><font color='blue' size=5><b>New Distributor's Application Form</b></font>
+<hr size=5 color='maroon'></center>
+<FORM METHOD='post' ACTION='http://localhost:8080/servlet/DisSign' name=login onsubmit='return check();'>
+<center><table><tr><td><img src='images/rose.gif'></td>
+<td><table>
+<tr><td colspan=3><u><b>Login : </u></td></tr>
+<tr><td>User ID : *</td><td>Password : *</td><td>Confirm Password: *</td></tr>
+<td><INPUT TYPE='text' NAME='login'></td><td><input type='password' name='pass'></td><td><input type='password' name='pass1' onFocus="logincheck()"></td></tr>
+<tr><td colspan=3><hr color=blue></td></tr>
+<tr><td colspan = 3><u><b>Personal :</u></td></tr>
+<tr><td>Name: *</td><td>Address : *</td></tr>
+</tr><td><INPUT TYPE='text' NAME='name' onFocus="passcheck()"></td>
+<td><INPUT TYPE='text' NAME='add1'></td><td><INPUT TYPE='text' NAME='add2'></td></tr>
+<tr><td>City : *</td><td>State : *</td> <td>Pin Code : *</td></tr>
+<tr><td><INPUT TYPE='text' NAME='city'></td>
+<td><INPUT TYPE='text' NAME='state'></td><td><INPUT TYPE='text' NAME='pin'></td></tr>
+<tr><td>E-Mail ID : *</td><td>Resi-Phone : *</td><td>Work-Phone : *</td></tr>
+<tr><td><INPUT TYPE='text' NAME='email' onFocus="pincheck()"></td>
+<td><INPUT TYPE='text' NAME='rphone' onFocus="emailcheck()"></td>
+<td><INPUT TYPE='text' NAME='ophone' onFocus="rphonecheck()"></td></tr>
+<tr><td colspan=3><hr color=blue></td></tr>
+<tr><td colspan=4 align=center>
+<INPUT TYPE='submit' value='Continue'>&nbsp;&nbsp;&nbsp;
+</center></FORM></td></tr>
+<tr><td>* Compulsory Fields</td></tr>
+</table></table></center>
+</font></body></html>

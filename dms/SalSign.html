@@ -1,0 +1,45 @@
+<HTML>
+<HEAD>
+<TITLE> New Sales Rep sign in page </TITLE>
+<style>
+body{min-width:25%;max-width:20%;min-height:80%;max-height:100%;border:6px solid maroon}table{font-size:14pt;color:maroon}input{font-size:14pt;color:blue}
+</style></HEAD>
+<script language="JavaScript">
+function check()
+{	
+	if(passcheck())
+	{ }
+	else
+		document.salform.submit()
+}
+function passcheck()
+{
+	var pass=salform.passwd.value
+	var pass1=salform.pass1.value
+	if(pass != pass1 )
+	{
+		alert("Passwords typed do not match. Please re-enter your password")
+		salform.passwd.focus()
+		return true
+	}
+	return false
+}
+function logincheck()
+{
+	if(salform.userid.value == salform.passwd.value)
+	{
+		alert("Login and Password are same . Please change your password")
+		salform.passwd.focus()
+	}
+}
+</script>
+<body bgcolor='E9FFB9' text='maroon'><center>
+<h1> Sales Representative Login In Page</h1>
+<hr size=4 color=maroon>
+<center><form name='salform' method=post action='http://localhost:8080/servlet/SalSign'>
+<table cellspacing=6><tr><td>Login Id </td><td>:</td><td><input type=text name=userid></td>
+<tr><td>Password </td><td>:</td><td><input type=password name=passwd></td> 
+<tr><td>Confirm Password</td><td>:</td><td><input type=password name=pass1 onFocus="logincheck()"></td>
+</tr></table><br>
+<input type=submit name='Login' value='Login' onFocus="check()">&nbsp;&nbsp;<input type=reset value='Clear'>
+</center></BODY></HTML>

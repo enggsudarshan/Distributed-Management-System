@@ -1,0 +1,463 @@
+ 
+<html>
+<head>
+<title>Anex Electrical Co., Ltd. - Product Catalogue</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript">
+
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v3.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+
+function MM_displayStatusMsg(msgStr) { //v1.0
+  status=msgStr;
+  document.MM_returnValue = true;
+}
+
+//-->
+</script>
+<link href="main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onLoad="MM_preloadImages('graphics/gotop_f2.gif','graphics/header_r3_c02_f2.gif','graphics/header_r3_c06_f2.gif','graphics/header_r3_c08_f2.gif','graphics/header_r3_c10_f2.gif','graphics/header_r3_c04_f2.gif')" background="graphics/bkground.gif">
+<table border="0" cellpadding="0" cellspacing="0" width="760">
+  <!-- fwtable fwsrc="header-a.png" fwbase="header.gif" --> 
+  <tr> <!-- Shim row, height 1. --> 
+    <td><img src="graphics/shim.gif" width="10" height="1" border="0" name="undefined_2"></td>
+
+    <td><img src="graphics/shim.gif" width="37" height="1" border="0" name="undefined_2"></td>
+
+    <td><img src="graphics/shim.gif" width="2" height="1" border="0" name="undefined_2"></td>
+
+    <td><img src="graphics/shim.gif" width="87" height="1" border="0" name="undefined_2"></td>
+
+    <td><img src="graphics/shim.gif" width="2" height="1" border="0" name="undefined_2"></td>
+
+    <td><img src="graphics/shim.gif" width="96" height="1" border="0" name="undefined_2"></td>
+
+    <td><img src="graphics/shim.gif" width="2" height="1" border="0" name="undefined_2"></td>
+
+    <td><img src="graphics/shim.gif" width="68" height="1" border="0" name="undefined_2"></td>
+
+    <td><img src="graphics/shim.gif" width="2" height="1" border="0" name="undefined_2"></td>
+
+    <td><img src="graphics/shim.gif" width="61" height="1" border="0" name="undefined_2"></td>
+
+    <td><img src="graphics/shim.gif" width="263" height="1" border="0" name="undefined_2"></td>
+
+    <td><img src="graphics/shim.gif" width="130" height="1" border="0" name="undefined_2"></td>
+
+    <td><img src="graphics/shim.gif" width="1" height="1" border="0" name="undefined_2"></td>
+
+  </tr>
+
+  <tr valign="top"><!-- row 1 --> 
+
+    <td rowspan="2" colspan="11"><img name="header_r1_c01_2" src="graphics/header_r1_c01.gif" width="630" height="64" border="0"></td>
+
+    <td><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=4,0,2,0" width="130" height="55">
+
+        <param name=movie value="flash/squares.swf">
+
+        <param name=quality value=high>
+
+        <embed src="flash/squares.swf" quality=high pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="130" height="55">
+
+        </embed> 
+
+      </object></td>
+
+    <td><img src="graphics/shim.gif" width="1" height="55" border="0" name="undefined_2"></td>
+
+  </tr>
+
+  <tr valign="top"><!-- row 2 --> 
+
+    <td rowspan="2"><img name="header_r2_c12" src="graphics/header_r2_c12.gif" width="130" height="24" border="0"></td>
+
+    <td><img src="graphics/shim.gif" width="1" height="9" border="0" name="undefined_2"></td>
+
+  </tr>
+
+  <tr valign="top"><!-- row 3 --> 
+
+    <td rowspan="2"><img name="header_r3_c01" src="graphics/header_r3_c01.gif" width="10" height="43" border="0"></td>
+
+    <td><a href="index.php?PHPSESSID=791f67ca4607c172cec42ced11461eb9" target="_top" onMouseOut="MM_swapImgRestore()"  onMouseOver="MM_swapImage('header_r3_c02_2','','graphics/header_r3_c02_f2.gif',1);" ><img name="header_r3_c02_2" src="graphics/header_r3_c02.gif" width="37" height="15" border="0" alt="Home"></a></td>
+
+    <td rowspan="2"><img name="header_r3_c03" src="graphics/header_r3_c03.gif" width="2" height="43" border="0"></td>
+
+    <td><a href="profile.html?PHPSESSID=791f67ca4607c172cec42ced11461eb9" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('header_r3_c04_2','','graphics/header_r3_c04_f2.gif',1)"><img name="header_r3_c04_2" src="graphics/header_r3_c04.gif" width="87" height="15" border="0" alt="Company Profile"></a></td>
+
+    <td rowspan="2"><img name="header_r3_c05" src="graphics/header_r3_c05.gif" width="2" height="43" border="0"></td>
+
+    <td><a href="product.php?PHPSESSID=791f67ca4607c172cec42ced11461eb9" target="_top" onMouseOut="MM_swapImgRestore()"  onMouseOver="MM_swapImage('header_r3_c06_2','','graphics/header_r3_c06_f2.gif',1);" ><img name="header_r3_c06_2" src="graphics/header_r3_c06_f2.gif" width="96" height="15" border="0" alt="Product Catalogue"></a></td>
+
+    <td rowspan="2"><img name="header_r3_c07" src="graphics/header_r3_c07.gif" width="2" height="43" border="0"></td>
+
+    <td><a href="whatsnew.html?PHPSESSID=791f67ca4607c172cec42ced11461eb9" target="_top" onMouseOut="MM_swapImgRestore()"  onMouseOver="MM_swapImage('header_r3_c08_2','','graphics/header_r3_c08_f2.gif',1);" ><img name="header_r3_c08_2" src="graphics/header_r3_c08.gif" width="68" height="15" border="0" alt="Recruitment"></a></td>
+
+    <td rowspan="2"><img name="header_r3_c09" src="graphics/header_r3_c09.gif" width="2" height="43" border="0"></td>
+
+    <td><a href="contact.html?PHPSESSID=791f67ca4607c172cec42ced11461eb9" target="_top" onMouseOut="MM_swapImgRestore()"  onMouseOver="MM_swapImage('header_r3_c10_2','','graphics/header_r3_c10_f2.gif',1);" ><img name="header_r3_c10_2" src="graphics/header_r3_c10.gif" width="61" height="15" border="0" alt="Contact Us"></a></td>
+
+    <td><img name="header_r3_c11_2" src="graphics/header_r3_c11.gif" width="263" height="15" border="0"></td>
+
+    <td><img src="graphics/shim.gif" width="1" height="15" border="0" name="undefined_2"></td>
+
+  </tr>
+
+  <tr valign="top"><!-- row 4 --> 
+
+    <td><img name="header_r4_c02" src="graphics/header_r4_c02.gif" width="37" height="28" border="0"></td>
+
+    <td><img name="header_r4_c04" src="graphics/header_r4_c04.gif" width="87" height="28" border="0"></td>
+
+    <td><img name="header_r4_c06" src="graphics/header_r4_c06.gif" width="96" height="28" border="0"></td>
+
+    <td><img name="header_r4_c08" src="graphics/header_r4_c08.gif" width="68" height="28" border="0"></td>
+
+    <td><img name="header_r4_c10" src="graphics/header_r4_c10.gif" width="61" height="28" border="0"></td>
+
+    <td colspan="2"><img name="header_r3_c11" src="graphics/header_product.gif" width="393" height="28" border="0"></td>
+
+    <td><img src="graphics/shim.gif" width="1" height="28" border="0" name="undefined_2"></td>
+
+  </tr>
+
+  <!--   This table was automatically created with Macromedia Fireworks 3.0   --> 
+
+  <!--   http://www.macromedia.com   --> 
+
+</table>
+
+<table width="760" border="0" cellspacing="0" cellpadding="10">
+
+  <tr> 
+
+    <td width="155" align="center" valign="top" background="graphics/bkground_prodcat.gif"> 
+
+<script language="JavaScript">
+<!--
+function LoginNameIsNull()
+{	
+	if (( document.form1.login.value == "" )||( document.form1.password.value == "" ))
+		alert ("Please enter login name and password.");
+	else	
+	{
+		document.form1.method="POST"; 
+		//document.form1.action="loginsure.php";
+		document.form1.submit();
+	}
+}	
+
+//-->
+</script>
+<form name="form1" ><input type="hidden" name="PHPSESSID" value="791f67ca4607c172cec42ced11461eb9" />
+        <table border="0" cellpadding="0" cellspacing="0" width="150">
+          <!-- fwtable fwsrc="registeredUser.png" fwbase="registeredUser.gif" --> 
+          <tr valign="top"><!-- row 1 --> 
+            <td><img name="registeredUser_r1_c1" src="graphics/registeredUser_r1_c1.gif" width="150" height="21" border="0"></td>
+          </tr>
+          <tr valign="top" bgcolor="#B5E7FF"><!-- row 2 --> 
+            <td> 
+              <table border="0" cellspacing="0" cellpadding="3" align="center">
+                <tr> 
+                  <td><font size="1" face="Verdana, Arial, Helvetica, sans-serif">Username:</font></td>
+                  <td> 
+                    <input type="text" name="login" size="8" class="QtyBox">
+                  </td>
+                </tr>
+                <tr> 
+                  <td><font size="1" face="Verdana, Arial, Helvetica, sans-serif">Password:</font></td>
+                  <td> 
+                    <input type="password" name="password" size="8" class="QtyBox">
+                  </td>
+                </tr>
+                <tr> 
+                  <td>&nbsp;</td>
+                  <td> 
+                    <input type="button" name="LgoinSubmit" value="Login" onClick="LoginNameIsNull();" class="SmallButton">
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr valign="top"><!-- row 3 --> 
+            <td><img name="registeredUser_r3_c1" src="graphics/registeredUser_r3_c1.gif" width="150" height="6" border="0"></td>
+          </tr>
+          <!--   This table was automatically created with Macromedia Fireworks 3.0   --> 
+          <!--   http://www.macromedia.com   --> 
+        </table>
+        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><a href="newregistration.php?PHPSESSID=791f67ca4607c172cec42ced11461eb9">Register 
+          Now</a><br>
+          <a href="lostpassword.html?PHPSESSID=791f67ca4607c172cec42ced11461eb9">Forgot Password</a></font></p>
+<input type='hidden' name='lnkSeriesID' value='0002'><input type='hidden' name='lnkCategoryID' value='0035'><input type='hidden' name='lnkPageNo' value=''>        </form>
+            <form name="form2" ><input type="hidden" name="PHPSESSID" value="791f67ca4607c172cec42ced11461eb9" />
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td>
+              <p></p>
+              <table border="0" cellpadding="0" cellspacing="0" width="150">
+                <!-- fwtable fwsrc="quotation.png" fwbase="quotation.gif" --> 
+                <tr> <!-- Shim row, height 1. --> 
+                  <td><img src="graphics/shim.gif" width="1" height="1" border="0" name="undefined_3"></td>
+                  <td><img src="graphics/shim.gif" width="68" height="1" border="0" name="undefined_3"></td>
+                  <td><img src="graphics/shim.gif" width="1" height="1" border="0" name="undefined_3"></td>
+                  <td><img src="graphics/shim.gif" width="25" height="1" border="0" name="undefined_3"></td>
+                  <td><img src="graphics/shim.gif" width="14" height="1" border="0" name="undefined_3"></td>
+                  <td><img src="graphics/shim.gif" width="1" height="1" border="0" name="undefined_3"></td>
+                  <td><img src="graphics/shim.gif" width="22" height="1" border="0" name="undefined_3"></td>
+                  <td><img src="graphics/shim.gif" width="16" height="1" border="0" name="undefined_3"></td>
+                  <td><img src="graphics/shim.gif" width="2" height="1" border="0" name="undefined_3"></td>
+                </tr>
+                <tr valign="top"><!-- row 1 --> 
+                  <td colspan="9"><img name="quotation_r1_c01" src="graphics/quotation_r1_c01.gif" width="150" height="4" border="0"></td>
+                </tr>
+                <tr valign="top"><!-- row 2 --> 
+                  <td rowspan="2" colspan="4"><img name="quotation_r2_c01" src="graphics/quotation_r2_c01.gif" width="95" height="17" border="0"></td>
+                  <td colspan="3"><a href="javascript:SendQuote();" onMouseOut="MM_swapImgRestore();MM_displayStatusMsg('');return document.MM_returnValue" onMouseOver="MM_swapImage('quotation_r2_c05','','graphics/quotation_r2_c05_f2.gif',1);;MM_displayStatusMsg('Send Quotation Request');return document.MM_returnValue" ><img name="quotation_r2_c05" src="graphics/quotation_r2_c05.gif" width="37" height="13" border="0" alt="Send Quotation Request"></a></td>
+                  <td rowspan="2" colspan="2"><img name="quotation_r2_c08" src="graphics/quotation_r2_c08.gif" width="18" height="17" border="0"></td>
+                </tr>
+                <tr valign="top"><!-- row 3 --> 
+                  <td colspan="3"><img name="quotation_r3_c05" src="graphics/quotation_r3_c05.gif" width="37" height="4" border="0"></td>
+                </tr>
+                <!--   This table was automatically created with Macromedia Fireworks 3.0   --> 
+                <!--   http://www.macromedia.com   --> 
+              </table>
+            </td>
+          </tr>
+          <tr bgcolor="#B5E7FF"> 
+            <td> 
+              <table border="0" cellspacing="1" cellpadding="0">
+                <tr align="center"> 
+                  <td><img name="quotation_r4_c02" src="graphics/quotation_r4_c02.gif" width="68" height="14" border="0"></td>
+                  <td><img name="quotation_r4_c04" src="graphics/quotation_r4_c04.gif" width="39" height="14" border="0"></td>
+                  <td><a href="javascript: if (confirm('Are you sure to unselect all item?')) {document.form2.hidAction.value='deleteall'; document.form2.submit();}" onMouseOut="MM_swapImgRestore();MM_displayStatusMsg('');return document.MM_returnValue"  onMouseOver="MM_swapImage('quotation_r4_c07','','graphics/quotation_r4_c07_f2.gif',1);MM_displayStatusMsg('Remove All Products from Quotation List');return document.MM_returnValue" ><img name="quotation_r4_c07" src="graphics/quotation_r4_c07.gif" width="38" height="14" border="0" alt="Remove All"></a></td>
+                </tr>
+                <tr bgcolor="#CCFFFF"> 
+                  <td align="center" colspan="3"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"> 
+                    <font size="1">No Product<br>
+                    Selected</font></font></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td><img name="quotation_r6_c01_2" src="graphics/quotation_r6_c01.gif" width="150" height="6" border="0"></td>
+          </tr>
+        </table>
+
+<input type="hidden"  name="hidAction"   value=>
+<input type="hidden"  name="hidDeleteProID"   value=>
+<input type="hidden"  name="hidFocusValue"   value="1">
+<input type='hidden' name='lnkSeriesID' value='0002'><input type='hidden' name='lnkCategoryID' value='0035'><input type='hidden' name='lnkPageNo' value=''><input type='hidden' name='lnkPID' value='348'><input type='hidden' name='hidIsLogin' value='no'>      </form>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function CountSure( i )
+    {
+	if (i!=parseFloat(i) )
+	    {	
+    	    alert("Please enter a numerical count value.");	
+	    return document.Form1.hidFocusValue.value;
+	    }
+	else
+	    {
+	    if (i!=document.form2.hidFocusValue.value)
+		{
+		document.form2.hidAction.value='refresh';
+		document.form2.submit();
+		}
+	    return i;
+	    }
+    }
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+function ProCancel(i) { //v2.0
+    if (confirm('Are you sure to cancel the item?')) 
+	{
+	document.form2.hidAction.value='cancel'; 
+	document.form2.hidDeleteProID.value=i; 
+	document.form2.submit();
+	}
+}
+function SendQuote() { //v2.0
+    if (document.form2.hidIsLogin.value=="yes") 
+	{
+	document.form2.hidAction.value='refresh';
+	document.form2.method="POST"; 
+	document.form2.action="sendquote.php";
+	document.form2.submit();
+	}
+	else
+	{
+		alert ("Please Login or register first!");
+	}	
+}
+//-->
+</SCRIPT> 
+
+	</td>
+
+    <td width="605" valign="top"> 
+
+
+      <p><a href="product.php?PHPSESSID=791f67ca4607c172cec42ced11461eb9"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Product 
+
+        Catalogue</font></a><font face="Verdana, Arial, Helvetica, sans-serif" size="2">&gt; 
+
+        <a href='product-2.php?lnkSeriesID=0002&PHPSESSID=791f67ca4607c172cec42ced11461eb9'>Beaulty & Health Care Products</a> </font><font face="Verdana, Arial, Helvetica, sans-serif" size="2"> &gt;<br>
+
+        </font></p>
+
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b><font size="3">
+
+Aromatherapy Vaporizer
+	</font></b></font></p>
+
+	<form name="form4"><input type="hidden" name="PHPSESSID" value="791f67ca4607c172cec42ced11461eb9" />
+
+      <table width="500" border="1" cellspacing="0" cellpadding="3" align="center" bgcolor="#66CCFF" bordercolor="#66CCFF">
+
+        <tr bgcolor="#66CCFF"> 
+
+          <td width="80" align="center"> 
+
+            <p><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#006699"> 
+
+              <b>Model</b></font></p>
+
+          </td>
+
+          <td width="365"><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#006699"><b>Description</b></font></td>
+
+          <td width="55" align="center"> 
+
+            <table border="0" cellspacing="0" cellpadding="1">
+
+              <tr> 
+
+                <td><font size="1" color="#006699"><b><font face="Verdana, Arial, Helvetica, sans-serif">Quote</font></b></font></td>
+
+                <td><font size="1" color="#006699"><b><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><a href="product-3.php?lnkSelectAll=1&lnkSeriesID=0002&lnkCategoryID=0035&lnkPageNo=&lnkPID=348&PHPSESSID=791f67ca4607c172cec42ced11461eb9" onMouseOver="MM_displayStatusMsg('Place All Products in Quotation List');return document.MM_returnValue" onMouseOut="MM_displayStatusMsg('');return document.MM_returnValue"><img src="graphics/quotation_mark.gif" width="14" height="14" border="0" alt="Quote All"></a></font></b></font></td>
+
+              </tr>
+
+            </table>
+
+            
+
+          </td>
+
+        </tr>
+
+
+        <tr bgcolor='#DFEFFF'> 
+
+          <td width="80"  valign="top"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">TS-835</font></td>
+
+          <td width="365"  valign="top"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><a href="javascript:MM_openBrWindow('showdetail.php?lnkProID=348','zoomwin','scrollbars=yes,width=600,height=420')" onMouseOver="MM_displayStatusMsg('Click to Show this Product Detail');return document.MM_returnValue" onMouseOut="MM_displayStatusMsg('');return document.MM_returnValue"><font size="2">
+
+			Lamp-Style Aromatherapy Vaporiser</font></a></font></td>
+
+          <td width="55" align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><a href="product-3.php?lnkProID=348&lnkSeriesID=0002&lnkCategoryID=0035&lnkPageNo=&lnkPID=348&PHPSESSID=791f67ca4607c172cec42ced11461eb9" onMouseOver="MM_displayStatusMsg('Place this Product in Quotation List');return document.MM_returnValue" onMouseOut="MM_displayStatusMsg('');return document.MM_returnValue"><img src="graphics/quotation_mark.gif" width="14" height="14" border="0" alt="Quote This"></a></font></td>
+
+        </tr>
+
+
+      </table>
+
+	</form>
+
+      <p align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+
+
+	</font></p>
+
+      <form name="QuickSearch" action="product-3.php" ><input type="hidden" name="PHPSESSID" value="791f67ca4607c172cec42ced11461eb9" />
+
+        <table border="0" cellspacing="0" cellpadding="2" align="center">
+
+          <tr> 
+
+            <td colspan="4"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>Keyword 
+
+              Search:</b></font></td>
+
+          </tr>
+
+          <tr>
+
+            <td> 
+
+              <input type="text" name="txtKeyword" size="15">
+
+            </td>
+
+            <td><font face="Verdana, Arial, Helvetica, sans-serif" size="2">in</font></td>
+
+            <td>
+
+              <select name="cboSeries">
+
+                <option value="all">All Series</option>
+
+      <option value='0006'>Baby Care Products</option><option value='0004'>Fluorescent Products</option><option value='0003'>Auto Accessories</option><option selected value='0002'>Beaulty & Health Care Products</option><option value='0001'>Household Appliances</option><option value='0005'>Personal Alaram & Security Products</option>              </select>
+            </td>
+            <td>
+              <input type="submit" name="Submit2" value="Search">
+            </td>
+          </tr>
+        </table>
+        </form>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"></font></p>
+    </td>
+  </tr>
+</table>
+
+<hr width="760" align="left">
+
+<table width="760" border="0" cellspacing="0" cellpadding="15">
+  <tr> 
+    <td> 
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="1">| <a href="index.php?PHPSESSID=791f67ca4607c172cec42ced11461eb9">Home</a> 
+
+        | <a href="profile.html?PHPSESSID=791f67ca4607c172cec42ced11461eb9">Company Profile</a> | <a href="product.php?PHPSESSID=791f67ca4607c172cec42ced11461eb9">Product 
+
+        Catalogue</a> | <a href="whatsnew.html?PHPSESSID=791f67ca4607c172cec42ced11461eb9">What's New</a> | <a href="contact.html?PHPSESSID=791f67ca4607c172cec42ced11461eb9">Contact 
+
+        Us</a> |</font></p>
+
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#003399">Copyright 
+
+        (c). Anex Electrical Co., Ltd. All rights reserved.</font></p>
+
+    </td>
+  </tr>
+</table>
+</body>
+</html>

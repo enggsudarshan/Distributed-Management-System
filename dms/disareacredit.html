@@ -1,0 +1,51 @@
+<html><title>Registration Page</title>
+<style>input{font-size:12pt;color:blue;}	table{font-size:14pt;color:maroon;}td{font-align:center} </style>
+<body><center><font color='blue' size=5><b>New Distributor's Application Form</b></font>
+<hr size=5 color='maroon'></center>
+<FORM METHOD='post' ACTION='http://localhost:8080/servlet/DisSign2' name=login>
+<center>
+<table><tr><td colspan = 3><u><b>Distributor Allotment Details:</u></td></tr>
+<tr><td>State</td><td> :</td><td><INPUT TYPE='text' NAME='dstate' size=10></td></tr>
+<tr><td>District</td><td> : </td><td>
+<select name='ddistrict'>
+<option value='Thirunelveli' >Thirunelveli
+<option value='Thiruvallur' >Thiruvallur
+<option value='simmakal' >simmakal
+<option value='kknagar' >kknagar
+<option value='parris' >parris
+<option value='Narimedu' >Narimedu 
+<option value='Coimbatore'>Coimbatore 
+<option value='Madurai'>Madurai
+<option value='Trichy'>Trichy 
+
+
+
+</select></td></tr>
+<tr><td>City</td><td>: </td><td>
+<select name='dcity'>
+
+<option value='Thirunelveli' >Thirunelveli
+<option value='Thiruvallur' >Thiruvallur
+<option value='simmakal' >simmakal
+<option value='kknagar' >kknagar
+<option value='parris' >parris
+<option value='Narimedu' >Narimedu 
+<option value='Chennai'>Chennai
+<option value='Coimbatore'>Coimbatore
+<option value='Madurai'>Madurai
+<option value='Trichy'>Trichy
+
+
+
+
+</select></td></tr>
+<tr><td>Area<td>: </td><td><select name='darea'><option value='Tambaram'>Tambaram
+<option value='Nanganallur'>Nanganallur<option value='Madipakkam'>Madipakkam<option value='Mambalam'>Mambalam</select></td></tr>
+</table><br><br><table>
+<tr><td colspan=3 align=center><b><u>Credit Card Details</u></b></td></tr>
+<tr><td>Credit Card No.</td><td> :</td><td><Input type=text name='ccno'></td></tr>
+<tr><td>Bank Name</td><td> :</td><td><Input type=text name='bname'></td></tr>
+</table><br>
+<input type='Submit' value='Submit'> &nbsp;&nbsp;&nbsp;&nbsp;<input type='reset' value='Cancel'>
+
+

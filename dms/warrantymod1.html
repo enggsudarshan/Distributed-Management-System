@@ -1,0 +1,90 @@
+<html><head><title>IMS</title>
+<style>
+<!--
+.plain 
+{ 
+BORDER-RIGHT: 1px solid; BORDER-TOP: 1px solid; FONT-SIZE: 10px; FONT-WEIGHT: Bold; BORDER-LEFT: 1px solid; BORDER-BOTTOM: 1px solid; FONT-FAMILY: verdana; Background-color:#CCCCCC;
+}
+-->
+</STYLE>
+<script language='javascript'>
+function y2k(number)    { 
+return (number < 1000) ? number + 1900 : number;
+}
+var today = new Date();
+var day   = today.getDate();
+var month = today.getMonth();
+var year  = y2k(today.getYear());
+var Display;
+function padout(number) {
+return (number < 10) ? '0' + number : number;
+}
+function restart() {
+Display.value = '' + padout(day) + '-' + padout(month - 0 + 1) + '-' + year;
+mywindow.close();
+}
+function newWindow(disp) {
+Display = disp;
+mywindow=open('calendar.html','myname','resizable=no,width=350,height=270');
+mywindow.location.href = 'calendar.html';
+if (mywindow.opener == null) mywindow.opener = self;
+}
+function checkStartEndDates(startd,startm,starty,endd,endm,endy,startno) {
+if(parseInt(endy) < parseInt(starty)) {
+alert('Please enter an end year greater than or same as the start year');
+return false;
+}
+else if(parseInt(starty) == parseInt(endy)) {
+if(parseInt(endm) < parseInt(startm)) {
+alert('Please enter an end month greater than or same as the start month');
+return false;
+}
+else if(parseInt(startm) == parseInt(endm)) {	
+if(parseInt(endd) < parseInt(startd)) {
+alert('Please enter an end date greater than or same as the start date');
+return false;
+}
+else return true;
+}
+else return true;
+}
+else return true;
+}
+</script>
+</head>
+<body bgcolor=#c0c0c0 marginheight=0 marginwidth=0 topmargin=0 leftmargin=0>
+<!-- header starts here-->
+<!-- header ends here-->
+<form name=frm>
+<br><br>
+<table border=0 cellspacing=0 cellpadding=0 width=400 align=center>
+<tr>
+<td bgcolor=black>
+<table border=0 cellspacing=1 cellpadding=2 width=400 align=center>
+<tr>
+<td bgcolor=#0000cc colspan=2 align=center><font face=verdana size=2 color=#ffffff><b>Warranty Range - Modification</b></td>
+</tr>
+<tr>
+<td bgcolor=#eeeeee><font face=verdana size=1 color=#000000><b>Start Date</b></td>
+<td bgcolor=#eeeeee><font face=verdana size=1>
+<input type='text' class=plain name='stdate' value='18-Jan-2002' size='10' onFocus='javascript:blur()'>&nbsp;&nbsp;
+<input type='button' value='Choose Date' class=plain onClick='newWindow(this.form.stdate)'>
+</td>
+</tr>
+<tr>
+<td bgcolor=#eeeeee><font face=verdana size=1 color=#000000><b>End Date</b></td>
+<td bgcolor=#eeeeee><font face=verdana size=1>
+<input type='text' class=plain name='stdate1' value='17-Jan-2003' size='10' onFocus='javascript:blur()'>&nbsp;&nbsp;
+<input type='button' value='Choose Date' class=plain onClick='newWindow(this.form.stdate1)'>
+</td>
+</tr>
+<tr>
+<td bgcolor=#eeeeee align=center colspan=2><br><input type=button value=Modify onClick="location.href='warrantymod2.html'" class=plain></td>
+</tr>
+</table>
+</td></tr></table>
+<br><br>
+</form>
+<!-- footer starts here-->
+<!-- footer ends here-->
+</body></html>

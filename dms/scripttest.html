@@ -1,0 +1,80 @@
+<HTML><HEAD>
+<TITLE> Purchase Form - OSS </TITLE>
+</HEAD>
+<h1> <center> Purchase Form - OSS </center></h1>
+<BODY>
+<script language="JavaScript">
+function isEmpty(inputstr)
+{
+    if(inputstr == "" || inputstr == null)
+		{return true}
+	return false
+}
+function isAlpha(inputval)
+{
+	inputstr=inputval.toString()
+	var fchar=inputstr
+	fchar=fchar.substring(0,1)
+	fchar=fchar.toUpperCase()
+	if(fchar < "A" || fchar > "Z")
+	{ return true}
+	return false
+}
+function isPosInteger(inputval)
+{
+	inputstr=inputval.toString()
+	for(var i=0;i<inputstr.length;i++)
+	{
+		var fchar=inputstr.charAt(i)
+		if(fchar<"0" || fchar > "9")
+			return true
+	}return false
+}
+function verifyIt(form)
+{
+   	if(isEmpty(form.pname.value))
+	{
+		alert("please enter a value for product name")
+		pform.pname.focus()
+		return true
+	}
+	if(isEmpty(form.qty.value))
+	{
+		alert("Please enter a value for a quantity")
+		pform.qty.focus()
+		return true
+	}
+	if(isAlpha(form.pname.value))
+	{
+		alert("please enter proper product value");
+		pform.pname.focus()
+		return true
+	}
+	if(isPosInteger(form.qty.value))
+	{
+		alert("please enter proper qty")
+		pform.qty.focus()
+		return true
+	}
+	document.pform.submit()
+}
+function verify()
+{
+	var form=document.forms[0]
+	for(i=0;i<form.elements.length;i++)
+	{
+		if(form.elements[i].type=="text" && form.elements[i].value == "")
+		{ alert("Please fill " + form.elements[i].name)
+			form.elements[i].name.focus()
+		}
+	}
+	document.pform.submit()
+}
+</script>
+<form name="pform" method=post>
+Product Name : <input type="text" name="pname" ><p>
+Quantity : <input type="text" name="qty"><p>
+<input type="button" value="Sumbit" onClick="verify()">
+</form>
+</BODY>
+</HTML>

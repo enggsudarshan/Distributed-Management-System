@@ -1,0 +1,32 @@
+<HTML>
+<HEAD>
+<TITLE> Password change</TITLE>
+<style>
+table{font-size:14pt;color:maroon}input{font-size:14pt;color:blue}
+</style></HEAD>
+<script language="JavaScript">
+function passcheck()
+{
+	var pass=salform.passwd.value
+	var pass1=salform.pass1.value
+	if(pass != pass1 )
+	{
+		alert("Passwords typed do not match. Please re-enter your password")
+		salform.passwd.focus()
+		return true
+	}
+	return false
+}
+</script>
+<body text='maroon'><center>
+<h1> ABC Company</h1><br>
+<hr size=4 color=maroon><br>
+<h2>Password Change Page</h2>
+<br><font color=red size=4>Login ID and Password are same<br>Please change your password </font>
+<center><form name='passch' method=post action='http://localhost:8080/servlet/PassChange'>
+<table cellspacing=6><tr><td>Old Password </td><td>:</td><td><input type=password name=oldpass></td>
+<tr><td>New Password </td><td>:</td><td><input type=password name=passwd></td> 
+<tr><td>Confirm New Password</td><td>:</td><td><input type=password name=pass1></td>
+</tr></table><br>
+<input type=submit name='Login' value='Login'>&nbsp;&nbsp;<input type=reset value='Clear'>
+</center></BODY></HTML>

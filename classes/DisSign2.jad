@@ -1,0 +1,150 @@
+// Decompiled by DJ v3.6.6.79 Copyright 2004 Atanas Neshkov  Date: 11/26/04 2:51:19 PM
+// Home Page : http://members.fortunecity.com/neshkov/dj.html  - Check often for new version!
+// Decompiler options: packimports(3) 
+// Source File Name:   Dissign2.java
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.*;
+import javax.servlet.ServletException;
+import javax.servlet.http.*;
+
+public class DisSign2 extends HttpServlet
+{
+
+    public DisSign2()
+    {
+    }
+
+    public void doPost(HttpServletRequest httpservletrequest, HttpServletResponse httpservletresponse)
+        throws ServletException, IOException
+    {
+        HttpSession httpsession = httpservletrequest.getSession(true);
+        httpservletresponse.setContentType("text/html");
+        PrintWriter printwriter = httpservletresponse.getWriter();
+        String s = null;
+        int i = 0;
+        Object obj = null;
+        boolean flag = false;
+        String as[] = new String[15];
+        printwriter.println("<HTML><HEAD><TITLE>Sign Up Page</TITLE>");
+        printwriter.println("<style>");
+        printwriter.println("pre{min-width:40%;max-width:40%;min-height:30%;max-height:50%;border:10px solid maroon}input{font-size:15pt;color:blue}");
+        printwriter.println("</style>");
+        printwriter.println("</HEAD>");
+        printwriter.println("<body bgcolor='E9FFB9'>");
+        printwriter.println("<br><br>");
+        printwriter.println("<font size=10><centEr>ABC Company Welcomes U</center><font><hr color=green>");
+        printwriter.println("<pre><center><font size=5><b>");
+        try
+        {
+            Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
+            Connection connection = DriverManager.getConnection("jdbc:odbc:dis");
+            Connection connection1 = DriverManager.getConnection("jdbc:odbc:bank");
+            Statement statement = connection.createStatement();
+            ResultSet resultset = statement.executeQuery("select * from disdetails where ddistrict ='" + httpservletrequest.getParameter("ddistrict") + "' and dcity ='" + httpservletrequest.getParameter("dcity") + "' and area ='" + httpservletrequest.getParameter("darea") + "'");
+            if(resultset.next())
+            {
+                printwriter.println("Already Existing Area");
+                printwriter.println("Please try another one");
+                printwriter.println("<a href='http://localhost:8080/dms/disareacredit.html'>");
+                printwriter.println("<image src='http://localhost:8080/dms/images/Arrow.gif'></a><br>");
+            } else
+            {
+                resultset.close();
+                statement.close();
+                statement = connection1.createStatement();
+                resultset = statement.executeQuery("select * from credit1 where creditno='" + httpservletrequest.getParameter("ccno") + "' and bank='" + httpservletrequest.getParameter("bname") + "'");
+                byte byte0 = 0;
+                if(!resultset.next())
+                {
+                    printwriter.println("<h3><center><font size=5><b>The given Credit Number is not found");
+                    printwriter.println("<br><br>Please,Enter the valid Credit Card Number !</font>");
+                    printwriter.println("</b>");
+                    printwriter.println("<a href='http://localhost:8080/dms/disareacredit.html'>");
+                    printwriter.println("<image src='http://localhost:8080/dms/images/Arrow.gif'></a><br>");
+                    byte0 = 2;
+                } else
+                {
+                    i = resultset.getInt(3);
+                    if(httpservletrequest.getParameter("ccno").equals(resultset.getString(1)) && i < 10000)
+                        byte0 = 1;
+                }
+                if(byte0 == 1)
+                {
+                    printwriter.println("<h3><center><font size=5><b>Sorry Your Credit Amount is less than the Required amount");
+                    printwriter.println("<h3>Please increase your credit amount and try again</h3>");
+                    printwriter.println("<a href = 'http://localhost:8080/dms/home.html'>");
+                    printwriter.println(" <img src='http://localhost:8080/dms/images/home1.gif'></a>");
+                } else
+                if(byte0 == 0)
+                {
+                    Statement statement1 = connection.createStatement();
+                    ResultSet resultset1;
+                    for(resultset1 = statement1.executeQuery("select * from disdetails"); resultset1.next();)
+                        s = resultset1.getString(1);
+
+                    if(s == null)
+                    {
+                        s = "d1";
+                    } else
+                    {
+                        int j = s.length();
+                        String s1 = s.substring(1, j);
+                        Integer integer = new Integer(s1);
+                        int l = integer.intValue() + 1;
+                        s = s.substring(0, 1) + Integer.toString(l);
+                    }
+                    PreparedStatement preparedstatement = connection.prepareStatement("insert into disdetails values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+                    PreparedStatement preparedstatement1 = connection.prepareStatement("insert into login values(?,?,?,?)");
+                    preparedstatement.setString(1, s);
+                    preparedstatement.setString(2, (String)httpsession.getValue("login"));
+                    preparedstatement.setString(3, (String)httpsession.getValue("pass"));
+                    preparedstatement.setString(4, (String)httpsession.getValue("name"));
+                    preparedstatement.setString(5, (String)httpsession.getValue("add1"));
+                    preparedstatement.setString(6, (String)httpsession.getValue("add2"));
+                    preparedstatement.setString(7, (String)httpsession.getValue("city"));
+                    preparedstatement.setString(8, (String)httpsession.getValue("state"));
+                    preparedstatement.setInt(9, (new Integer((String)httpsession.getValue("pin"))).intValue());
+                    preparedstatement.setString(10, (String)httpsession.getValue("email"));
+                    preparedstatement.setInt(11, (new Integer((String)httpsession.getValue("rphone"))).intValue());
+                    preparedstatement.setInt(12, (new Integer((String)httpsession.getValue("ophone"))).intValue());
+                    preparedstatement.setString(13, httpservletrequest.getParameter("dstate"));
+                    preparedstatement.setString(14, httpservletrequest.getParameter("ddistrict"));
+                    preparedstatement.setString(15, httpservletrequest.getParameter("dcity"));
+                    preparedstatement.setString(16, httpservletrequest.getParameter("darea"));
+                    preparedstatement.setString(17, httpservletrequest.getParameter("ccno"));
+                    preparedstatement.setInt(18, (new Integer(10000)).intValue());
+                    preparedstatement1.setString(1, ((String)httpsession.getValue("login")).toUpperCase());
+                    preparedstatement1.setString(2, (String)httpsession.getValue("pass"));
+                    preparedstatement1.setString(3, s);
+                    preparedstatement1.setString(4, new String("d"));
+                    preparedstatement.execute();
+                    preparedstatement1.execute();
+                    resultset1.close();
+                    statement1.close();
+                    connection.close();
+                    statement1 = connection1.createStatement();
+                    int k = i - 10000;
+                    statement1.executeUpdate("update credit1 set amount= " + k + " where creditno='" + httpservletrequest.getParameter("ccno") + "'");
+                    printwriter.println("<style>table{font-size:15pt;color:maroon;}</style>");
+                    printwriter.println("<center><img src='http://localhost:8080/dms/images/stars.gif'>&nbsp;Congratulations!!!! &nbsp;<img src='http://localhost:8080/dms/images/stars.gif'>");
+                    printwriter.println("<br><br><table border=0 cellspacing=10><tr><td>Distributor Code</td><td>:</td><td>" + s + "</td></tr>");
+                    printwriter.println("<tr><td>Login ID </td><td>:</td><td>" + (String)httpsession.getValue("login") + "</td></tr>");
+                    printwriter.println("<tr><td>Password </td><td>:</td><td>" + (String)httpsession.getValue("pass") + "</td></tr>");
+                    printwriter.println("<tr><td colspan=3> <h2>Please remember it forever </h2></td></tr></table>");
+                    printwriter.println("<a href = 'http://localhost:8080/dms/home.html'>");
+                    printwriter.println(" <img src='http://localhost:8080/dms/images/home1.gif'></a>");
+                    printwriter.println("</body></html>");
+                    statement1.close();
+                    connection.close();
+                    connection1.close();
+                }
+            }
+        }
+        catch(Exception exception)
+        {
+            printwriter.println(exception);
+        }
+    }
+}
